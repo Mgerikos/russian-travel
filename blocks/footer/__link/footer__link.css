@@ -1,0 +1,35 @@
+.footer__link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  transition: .5s ease;
+  margin-right: 18px;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width : 768px) {
+  .footer__link {
+    display: inline-block;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width : 320px) {
+  .footer__link {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+
+
