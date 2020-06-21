@@ -4,32 +4,43 @@
 @import url(./__caption/lead__caption.css);
 
 .lead {
+  font-family: Inter;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 984px;
-  margin: 56px auto 92px auto;
+  width: 100%;
+  margin: 0 auto 92px;
+  }
 
+  @media screen and (max-width: 1024px) {
+     .lead{
+      max-width: 928px;
+     }
+  }
+
+  @media screen and (max-width: 768px) {
+      .lead{
+       max-width: 768px;
+       margin: 0 auto 88px;
+      }
+   }
+   @media screen and (max-width: 600px) {
+    .lead{
+     max-width: 650px;
+    }
+ }
+
+   @media screen and (max-width: 40px) {
+    .lead{
+     max-width: 420px;
+    }
  }
 
 
- @media (min-width:768px) and (max-width: 1024px) {
-  .lead {
-    max-width: 928px;
-    margin-right: 48px 48px 92px 48px;
-  }
-}
-
-@media (min-width:320px) and (max-width: 768px) {
-  .lead {
-     max-width: 768px;
-     margin: 48px 0 88px 0;
-  }
-}
-
-@media screen and (max-width : 320px) {
-  .lead {
-    max-width: 320px;
-     margin: 48px 2px 64px 2px;
-  }
-}
-
-
+   @media screen and (max-width: 320px) {
+      .lead{
+       max-width: 320px;
+       margin: 0 auto 86px;
+      }
+   }
 
