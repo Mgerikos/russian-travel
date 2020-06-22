@@ -2,34 +2,30 @@
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  color: #fff;
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
-  transition: .5s ease;
-  margin-right: 18px;
+  margin-right: 20px;
+  padding: 0;
+  color: #fff;
 }
 
-.footer__link:hover {
-  opacity: 0.8;
+.footer__link:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
+.footer__link:hover{
+  opacity: .4;
+  transition: .2s linear;
+}
 
-@media (max-width : 768px) {
+@media screen and (max-width: 768px) {
   .footer__link {
-    display: inline-block;
     margin-bottom: 32px;
-  }
-}
-
-@media (max-width : 320px) {
-  .footer__link {
-    display: inline-block;
     font-size: 24px;
     line-height: 24px;
-    margin-bottom: 32px;
   }
 }
-
 
 

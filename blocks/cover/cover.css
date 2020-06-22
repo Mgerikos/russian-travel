@@ -3,15 +3,21 @@
 @import url(./__subtitle/cover__subtitle.css);
 
 
-.cover{
-  font-family: Inter;
-  max-width: 1184px;
-  margin-bottom: 92px;
-  width: 100%;
-  box-sizing: border-box;
+.cover {
+  min-width: 320px;
   margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../sprint-3-images/cover-trains.jpg);
+  max-width: 1184px;
 }
 
 
+@media (max-width: 1024px) {
+  .cover {
+      max-width: 100%;
+  }
+}
 
 
