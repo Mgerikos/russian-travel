@@ -2,43 +2,37 @@
 @import url(./__links/footer__links.css);
 @import url(./__copyright/footer__copyright.css);
 @import url(./__nav/footer__nav.css);
+@import url(./__item/footer__item.css);
 
 
 .footer {
-  max-width: 1184px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin: 92px 48px 24px;
-  padding: 0;
-  color: #fff;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          margin: 92px 0 24px 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media (min-width: 321px) and (max-width: 740px) {
   .footer {
-    margin: 92px 48px 24px;
+      margin: 88px 0 24px 0;
   }
 }
 
- @media screen and (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 500px) {
   .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 64px;
-    margin-left: 16px;
-    margin-bottom: 24px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
+  margin: 64px 118px 24px 16px;
+
+}
 }

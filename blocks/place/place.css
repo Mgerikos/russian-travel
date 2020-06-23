@@ -4,47 +4,69 @@
 @import url(./__url-heading/place__url-heading.css);
 @import url(./__link/place__link.css);
 @import url(./__website/place__website.css);
+@import url(./__text/text.css);
+
 
 .place {
-  max-width: 984px;
+  display: -ms-grid;
   display: grid;
-  column-gap: 40px;
-  row-gap: 48px;
+  -ms-grid-columns: 1fr 40px 1fr;
   grid-template-columns: 1fr 1fr;
-  margin: 0 auto 80px auto;
-  color: white;
+  max-width: 984px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 48px;
+  margin-bottom: 80px;
 }
 
 .place:last-of-type {
-  margin-bottom: auto;
+  margin-bottom: 92px;
 }
 
-@media (min-width:1024px) and (max-width: 1280px) {
-  .place {
-    max-width: 928px;
-    column-gap: 32px;
-  }
-}
 
-@media (min-width:768px) and (max-width: 1024px) {
+
+@media (min-width: 769px) and (max-width: 928px) {
   .place {
-    max-width: 720px;
-    column-gap: 28px;
+      margin-bottom: 76px;
   }
 }
 
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .place {
-    display: flex;
-    flex-direction: column;
+      margin-bottom: 72px;
+      -webkit-column-gap: 28px;
+         -moz-column-gap: 28px;
+              column-gap: 28px;
+
+  }
+  .place:last-of-type {
+      margin-bottom: 88px;
   }
 }
+
+
+@media (min-width: 321px) and (max-width: 720px) {
+  .place {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      margin-bottom: 60px;
+  }
+  .place:last-of-type {
+      margin-bottom: 76px;
+  }
+}
+
 
 @media (max-width: 320px) {
-    .place {
-
-      display: flex;
-      flex-direction: column;
+  .place {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      row-gap: 32px;
+      margin-bottom: 48px;
+  }
+  .place:last-of-type {
+      margin-bottom: 64px;
   }
 }

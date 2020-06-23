@@ -1,35 +1,42 @@
 @import url(./__overlay/cover__overlay.css);
 @import url(./__title/cover__title.css);
 @import url(./__subtitle/cover__subtitle.css);
+@import url(./__link/cover__link.css);
 
 
-.cover {
-  min-width: 320px;
-  margin: 0 auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../../sprint-3-images/cover-trains.jpg);
+.cover{
   max-width: 1184px;
+  min-height: 740px;
+  margin: 0 auto;
+  background-image: url(../../sprint-3-images/cover-trains.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
+.cover:hover .cover__overlay {
+  -webkit-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+  opacity: 0.8;
+}
 
-@media (max-width: 1024px) {
-  .cover {
-      max-width: 100%;
+@media screen and (max-width: 1024px){
+  .cover{
+    min-height: 640px;
+    max-width: 100%;
   }
 }
 
-@media (max-width: 768px) {
-  .cover {
-      margin-bottom: 88px;
+@media screen and (max-width: 768px){
+  .cover{
+    min-height: 480px;
   }
 }
 
-@media (max-width: 320px) {
-  .cover {
-      margin-bottom: 64px;
+@media screen and (max-width: 500px){
+  .cover{
+    min-height: 200px;
   }
 }
-
 
