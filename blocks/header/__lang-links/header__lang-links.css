@@ -1,7 +1,10 @@
 .header__lang-links {
   padding: 0;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 18px 1fr;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 18px;
   list-style-type: none;
 }
+
